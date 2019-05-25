@@ -23,8 +23,8 @@ new Date(time).toUTCString() - UTC format
 let timestamp = (date) => {
   if (Date(date)) {
     let time = {
-      "unix": new Date(time).getTime(),
-      "utc": new Date(time).toUTCString()
+      "unix": new Date(date).getTime(),
+      "utc": new Date(date).toUTCString()
     }
     return time;
   } else {

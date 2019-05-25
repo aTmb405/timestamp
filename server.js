@@ -21,7 +21,7 @@ app.get("/", function (req, res) {
 
 // your first API endpoint... 
 app.get("/:timestamp", function (req, res) {
-  res.json(req.params.timestamp);
+  res.json(timestamp(req.params.timestamp));
 });
 
 
